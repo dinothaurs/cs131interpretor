@@ -1,5 +1,5 @@
-Missing 4 test cases, I think the problem is with my scoping and dealing with variables 
-when it becomes more complicated and there are more returns or functions calls or 
-if/for statements. I know a specific problem is in the next returns where if there's a for
-loop and a nested if with a return, it can't catch that because of the way my returns are 
-implemented. Hope to fix that in future TT^TT
+Missing 2 test cases, I know the problem with test_ret2 is with returning a nil for values of 
+int, string, and bool, but I couldn't find a way to fix it without affecting a large majority
+of my other cases. I considered changing the values in the returns so I can differentiate
+an empty return vs a nil return but I realized it caused a big issue with main when main had
+a different type other than void and would cause for error when nothing was returned
