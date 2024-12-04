@@ -741,31 +741,18 @@ class Interpreter(InterpreterBase):
         value_obj = copy.copy(self.__eval_expr(expr_ast))
         return (ExecStatus.RETURN, value_obj)
     
-# def main():
-#     program = """
-# func test() : void {
-#   return;
-# }
-# func main() : void {
-#  print(test());
-# }
+def main():
+    program = """
+func test() : void {
+  return;
+}
+func main() : void {
+ print(test());
+}
 
-# """
+"""
 
-#     interpreter = Interpreter()
-#     interpreter.run(program)  
+    interpreter = Interpreter()
+    interpreter.run(program)  
 
-# main()
-
-#return void assign sjpld fail
-# var x1: s;
-#   var x2: s;
-#   x1 = new s;
-#   x2 = new s;
-#   x1.a = 5;
-#   x2.a = 5;
-#   print(x1==x2);
-#   print(x1.a==x2.a);
-#   print(x1==x1);
-#   x1.a = x2.a;
-#   print(x1.a == x2.a);
+main()
