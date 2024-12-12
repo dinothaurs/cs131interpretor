@@ -1,5 +1,9 @@
-Missing 2 test cases, I know the problem with test_ret2 is with returning a nil for values of 
-int, string, and bool, but I couldn't find a way to fix it without affecting a large majority
-of my other cases. I considered changing the values in the returns so I can differentiate
-an empty return vs a nil return but I realized it caused a big issue with main when main had
-a different type other than void and would cause for error when nothing was returned
+An Interpreter written in Python containing of 4 parts.
+
+Part 1:  A basic interpreter for the Brewin language(a made up language) with basic main, print, and input abilities.
+
+Part 2: Building off of Part 1 but now Brewin can run any self defined function and recursion.
+
+Part 3: Building off of Part 2, Brewin is now Brewin++ (kind of similar to C++), can now support structures, coercions, and uses static typing. 
+
+Part 4: Building off of Part 2, Brewin is now Brewin+; it supports need semantics and lazy evaluation, contains exception handling, and short circuting.
